@@ -85,7 +85,7 @@ hr {
   margin-top: 8px;
   padding: 2% 5% 2% 0;
 }
-@media (max-width: 880px) {
+@media (max-width: 900px) {
   .download-button {
     padding: 2% 5%;
   }
@@ -139,7 +139,7 @@ hr {
   padding-top: 5%;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 900px) {
   .cb-top {
     display: flex;
     flex-direction: column-reverse;
@@ -191,7 +191,7 @@ hr {
   padding: 0 15%;
 }
 
-@@media (max-width: 880px) {
+@@media (max-width: 900px) {
   .card-holder {
     margin: 10% 0;
   }
@@ -242,7 +242,7 @@ hr {
   width: 100%
 }
 
-@media (max-width: 880px) {
+@media (max-width: 900px) {
   #cta h1 {
     font-size: 30px;
   }
@@ -356,7 +356,7 @@ hr {
   justify-content: space-between;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 900px) {
   .footer-foot {
     display: flex;
     flex-direction: column;
