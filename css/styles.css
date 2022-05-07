@@ -3,6 +3,7 @@ body  {
   font-family: "Helvetica Neue", "Fredoka", sans-serif;
   font-weight: 500;
   letter-spacing: 0.8px;
+  margin-right: 0;
   position: relative;
 }
 h1  {
@@ -202,19 +203,22 @@ hr {
   text-align: left;
 }
 
-.card-holder {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-}
-
 .carousel-item {
   padding: 0 15%;
 }
 
-@@media (max-width: 768px) {
-  .card-holder {
-    margin: 10% 0;
+@media (max-width: 768px) {
+  #testimonies .card {
+    width: 10rem;
+  }
+  .carousel-item {
+    padding: 5% 5%;
+  }
+  button .carousel-control-next {
+    display: none; !important
+  }
+  button .carousel-control-prev {
+    display: none; !important
   }
 }
 
@@ -382,6 +386,11 @@ hr {
   bottom: 0;
   left: 0;
   transform: rotate(180deg);
+}
+
+.ft-2 {
+  display: flex;
+  padding-top: 20px;
 }
 
 @media (max-width: 768px) {
