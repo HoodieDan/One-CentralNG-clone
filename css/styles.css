@@ -58,9 +58,15 @@ hr {
   background-color: #5296CB;
   color: #FFFFFF;
   padding: 1% 6%;
+  position: relative;
   text-align: left;
 }
-
+.wavy-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
 .intro {
   padding: 9% 4%;
   line-height: 2;
@@ -85,8 +91,39 @@ hr {
   margin-top: 8px;
   padding: 2% 5% 2% 0;
 }
-@media (max-width: 900px) {
+@media (max-width: 991px) {
+  h1 {
+    font-size: 80px;
+    margin: 5% 0;
+  }
+  h2 {
+    font-size: 52px;
+    margin: 4% 0;
+  }
+  h3  {
+    font-size: 30px;
+    margin: 3% 0;
+  }
+  p {
+    font-size: 20px;
+    margin: 3% 0;
+  }
+  #title {
+    padding: 2% 8%;
+  }
+  .feature-buttons div {
+    height: 70px;
+  }
+  .btn {
+    font-size: 20px;
+    height: 70px;
+    padding: auto 32px;
+  }
+  .navbar-brand {
+    width: 300px;
+  }
   .download-button {
+    width: 300px;
     padding: 2% 5%;
   }
 
@@ -95,7 +132,7 @@ hr {
   }
 
   .airtime-button {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 }
 
@@ -139,7 +176,7 @@ hr {
   padding-top: 5%;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .cb-top {
     display: flex;
     flex-direction: column-reverse;
@@ -191,7 +228,7 @@ hr {
   padding: 0 15%;
 }
 
-@@media (max-width: 900px) {
+@@media (max-width: 991px) {
   .card-holder {
     margin: 10% 0;
   }
@@ -242,7 +279,7 @@ hr {
   width: 100%
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   #cta h1 {
     font-size: 30px;
   }
@@ -356,7 +393,7 @@ hr {
   justify-content: space-between;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .footer-foot {
     display: flex;
     flex-direction: column;
