@@ -1,14 +1,16 @@
-*{
-  padding : 0;
-  margin : 0;
-  overflow-x: hidden;
- -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
-  overflow-y: scroll;
- }
-*::-webkit-scrollbar {
-     display: none; /* for Chrome, Safari, and Opera */
- }
+@media (min-width: 991px) {
+  *{
+    padding : 0;
+    margin : 0;
+    overflow-x: hidden;
+   -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+   }
+  *::-webkit-scrollbar {
+       display: none; /* for Chrome, Safari, and Opera */
+   }
+}
 body  {
   border: none;
   line-height: 1.7;
@@ -108,12 +110,19 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-@media (max-width: 768px) {
+@media (max-width: 990px) {
+  *{
+    max-width: 100%;
+  }
+
   h1 {
     font-size: calc(1.425rem + 2.1vw);
   }
   h2 {
     font-size: 26px;
+  }
+  .intro {
+    padding-top: 20%;
   }
   .download-button {
     padding: 2% 5%;
@@ -125,10 +134,14 @@ hr {
 
   .airtime-button {
     margin-bottom: 16px;
+    width: 50vw;
   }
   .feature-buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .bills-button {
+    width: 30vw;
   }
 }
 
@@ -172,7 +185,7 @@ hr {
   padding-top: 5%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .cb-top {
     display: flex;
     flex-direction: column-reverse;
@@ -218,9 +231,9 @@ hr {
   padding: 0 15%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   #testimonies .card {
-    width: 10rem;
+    width: 80vw;
   }
   .carousel-item {
     padding: 5% 5%;
@@ -278,7 +291,7 @@ hr {
   width: 100%
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   #cta h1 {
     font-size: 30px;
   }
@@ -404,7 +417,7 @@ hr {
   padding-top: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   .footer-foot {
     display: flex;
     flex-direction: column;
