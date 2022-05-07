@@ -92,6 +92,10 @@ hr {
   margin-top: 8px;
   padding: 2% 5% 2% 0;
 }
+.db {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 @media (max-width: 768px) {
   h1 {
     font-size: calc(1.425rem + 2.1vw);
