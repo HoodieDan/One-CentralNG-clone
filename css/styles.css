@@ -3,6 +3,7 @@ body  {
   font-family: "Helvetica Neue", "Fredoka", sans-serif;
   font-weight: 500;
   letter-spacing: 0.8px;
+  position: relative;
 }
 h1  {
   font-weight: bolder;
@@ -45,6 +46,7 @@ hr {
   border-radius: 32px;
   background-color: #FFFFFF;
   color: #5296CB;
+  display: inline-block;
   font-weight: 500;
   font-size: 15px;
   max-height: 48px;
@@ -58,9 +60,14 @@ hr {
   background-color: #5296CB;
   color: #FFFFFF;
   padding: 1% 6%;
+  position: relative;
   text-align: left;
 }
-
+.wavy-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 .intro {
   padding: 9% 4%;
   line-height: 2;
@@ -86,6 +93,12 @@ hr {
   padding: 2% 5% 2% 0;
 }
 @media (max-width: 768px) {
+  h1 {
+    font-size: calc(1.425rem + 2.1vw);
+  }
+  h2 {
+    font-size: 26px;
+  }
   .download-button {
     padding: 2% 5%;
   }
@@ -96,6 +109,10 @@ hr {
 
   .airtime-button {
     margin-bottom: 16px;
+  }
+  .feature-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -155,7 +172,7 @@ hr {
       transform: translateY(0%);
     }
     100% {
-      transform: translateY(10%);
+      transform: translateY(7%);
     }
   }
 }
@@ -278,6 +295,7 @@ hr {
   color: #fff;
   margin: 2px 0;
   opacity: 80%;
+  position: relative;
   text-decoration: none;
 }
 
@@ -355,6 +373,12 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+.footer-wavy-img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
 
 @media (max-width: 768px) {
   .footer-foot {
@@ -363,9 +387,20 @@ hr {
     align-items: center;
   }
   .footer-md {
-    padding-left: 2%;
+    padding-left: 3%;
   }
   .pd {
     padding-left: 6%;
+  }
+  .ft {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .ft-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact {
+    grid-column: 1/3;
   }
 }
